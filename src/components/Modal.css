@@ -1,0 +1,16 @@
+.Modal {
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  background-color: cornflowerblue;
+  opacity: 0.8;
+  padding: 60px;
+}
+
+.chicken {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

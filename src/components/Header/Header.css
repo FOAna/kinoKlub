@@ -1,32 +1,99 @@
 @import url(../../styles/sizes.css);
 
-.Header__content,
 .Header__menuList,
 .Header__leftPart {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .Header {
   display: flex;
-  justify-content: center;
-}
-
-.Header__content {
-  max-width: var(--page-max-width);
-  min-width: var(--page-min-width);
+  justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
+  margin-top: 48px;
 }
 
 .Header__menuList {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 .Header__menuItemLink,
 .Header__userAccount {
   text-decoration: none;
-  color: rgb(197, 196, 196);
+}
+.Header__userAccount {
+  color: var(--main-text-color);
 }
 .Header__menuItemLink {
-  padding: 32px;
+  color: inherit;
+}
+.Header__menuItem {
+  height: 100%;
+  margin: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+}
+.Header__menuItem:hover {
+  color: var(--select-tab-color);
+  border-bottom: 2px solid var(--select-tab-color);
+}
+.Header__menuItem:first-child {
+  margin-left: 0;
+}
+.Header__menuItem:last-child {
+  margin-right: 0;
+}
+.Header__search,
+.Header__burgerMenu {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 32px;
+}
+.Header__search {
+  height: 24px;
+  width: 24px;
+}
+.Header__userIcon {
+  margin-left: 16px;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  border: 3px solid transparent;
+  border-image-slice: 1;
+  border-radius: 50%;
+  background-image: linear-gradient(
+      var(--background-color),
+      var(--background-color)
+    ),
+    radial-gradient(
+      circle at left,
+      var(--accent-orange-color),
+      var(--accent-red-color)
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.Header__logo {
+  margin-right: 60px;
+}
+.Header__menuControlls {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+.Header__userAccount {
+  display: flex;
+  align-items: center;
+}
+.Header__userName:hover {
+  color: var(--select-tab-color);
 }

@@ -1,4 +1,37 @@
-.MainPage__test {
-  background-color: darkmagenta;
-  height: 66px;
+@import url(../styles/colors.css);
+
+.MainPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "firstView firstView firstView"
+    "carousel carousel carousel"
+    "leftTop catalog rightTop"
+    "leftTop player rightTop"
+    "leftTop musicCatalog rightTop"
+    "subscribe subscribe subscribe"
+    "leftBottom latestNews rightBottom"
+    "leftBottom footer rightBottom";
+    background-color: var(--background-color);
 }
+
+.MainPage__firstView { grid-area: firstView; }
+
+.MainPage__carousel { grid-area: carousel; }
+
+.MainPage__catalog { grid-area: catalog; }
+
+.MainPage__player { grid-area: player; }
+
+.MainPage__musicCatalog { grid-area: musicCatalog; }
+
+.MainPage__subscribe { grid-area: subscribe; }
+
+.MainPage__latestNews { grid-area: latestNews; }
+
+.MainPage__footer { grid-area: footer; }
+

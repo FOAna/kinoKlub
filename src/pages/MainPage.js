@@ -1,15 +1,20 @@
 import logo from "../logo.svg";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "./MainPage.css";
+import FirstView from "../components/FirstView/FirstView";
 
 export default function MainPage() {
   return (
     <div className="MainPage">
-      <Header>Дополнительный текст</Header>
-      <img src={logo} />
-      <div className="MainPage__test" />
-      <Footer></Footer>
+    <div className="MainPage__firstView">
+      <FirstView/>
     </div>
+    <div className="MainPage__carousel"></div>
+    <div className="MainPage__catalog"></div>
+    <div className="MainPage__player"></div>
+    <div className="MainPage__musicCatalog"></div>
+    <div className="MainPage__subscribe"></div>
+    <div className="MainPage__latestNews"></div>
+    <div className="MainPage__footer"></div>
+</div>
   );
 }

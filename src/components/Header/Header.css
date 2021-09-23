@@ -1,0 +1,32 @@
+@import url(../../styles/sizes.css);
+
+.Header__content,
+.Header__menuList,
+.Header__leftPart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header__content {
+  max-width: var(--page-max-width);
+  min-width: var(--page-min-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Header__menuList {
+  list-style-type: none;
+}
+.Header__menuItemLink,
+.Header__userAccount {
+  text-decoration: none;
+  color: rgb(197, 196, 196);
+}
+.Header__menuItemLink {
+  padding: 32px;
+}

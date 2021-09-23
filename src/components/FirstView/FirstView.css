@@ -1,0 +1,6 @@
+@import url("../../styles/sizes.css");
+
+.FirstView {
+    max-width: var(--page-max-width);
+    min-width: var(--page-min-width);
+}

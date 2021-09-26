@@ -4,9 +4,11 @@ import userIcon from "../../images/userIcon.JPG";
 import searchIcon from "../../images/search.svg";
 import burgerMenuIcon from "../../images/burger.svg";
 
-export default function Header() {
+/*в скобочках указывается название объекта*/
+export default function Header(props) {
   return (
-    <header className="Header">
+    //JSX
+    <header className={`Header ${props.className}`}>
       <div className="Header__leftPart">
         <img className="Header__logo" src={logo} alt="Логотипчик" height="48" />
         <ul className="Header__menuList">

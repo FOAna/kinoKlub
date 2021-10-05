@@ -1,0 +1,48 @@
+@import url("../../styles/sizes.css");
+@import url("../../styles/colors.css");
+
+.PlayButton {
+  position: relative;
+  border-radius: 40px;
+  background: linear-gradient(
+    to right,
+    var(--accent-orange-color),
+    var(--accent-red-color)
+  );
+  box-shadow: none;
+  border: none;
+  color: var(--main-text-color);
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+  padding: 12px 52px 12px 16px;
+  align-self: flex-start;
+}
+.PlayButton__play {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: calc(100% - 40px);
+  top: 0;
+  animation: 1s linear letsGo, 1s linear 1s pulse infinite;
+  border-radius: 50%;
+}
+@keyframes letsGo {
+  0% {
+    left: -2px;
+  }
+  100% {
+    left: calc(100% - 40px);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}

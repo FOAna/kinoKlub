@@ -1,0 +1,51 @@
+@import url("../../styles/colors.css");
+
+:root {
+  --card-color-indigo: rgba(32, 72, 217, 0.5);
+  --card-color-blue: rgba(35, 170, 246, 0.5);
+  --card-color-green: rgba(35, 246, 132, 0.5);
+}
+
+.Card {
+  width: 260px;
+  height: 180px;
+  border-radius: 12px;
+  position: relative;
+  color: var(--main-text-color);
+}
+.Card__background {
+  object-fit: cover;
+  width: 260px;
+  height: 180px;
+  border-radius: 12px;
+}
+.Card__content {
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+}
+.Card__content_indigo {
+  background-color: var(--card-color-indigo);
+}
+.Card__content_blue {
+  background-color: var(--card-color-blue);
+}
+.Card__content_green {
+  background-color: var(--card-color-green);
+}
+.Card__subtitle {
+  font-size: 14px;
+  line-height: 16px;
+}
+.Card__rating {
+  font-size: 12px;
+  line-height: 14px;
+}
+.Card__quality {
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -84,7 +84,21 @@
 }
 .FirstView__text {
   color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
 }
 .FirstView__rating {
-  margin: 24px 0;
+  margin: 24px 0 12px;
+  display: flex;
+  align-items: center;
+}
+.FirstView__ratingStars {
+  margin-left: 16px;
+}
+.FirstView__genre {
+  color: var(--accent-red-color);
+  margin: 8px 0;
+}
+.FirstView__playButton {
+  margin: 30px 0;
 }

@@ -3,6 +3,10 @@ import Header from "../Header/Header";
 import wave from "../../images/vector.svg";
 import joker from "../../images/joker&batman.png";
 import Heading from "../Heading/Heading";
+import Rating from "../Rating/Rating";
+import PlayButton from "../PlayButton/PlayButton";
+import Card from "../Card/Card";
+import got from "../../images/gamesOfThrones.webp";
 
 export default function FirstView() {
   return (
@@ -38,6 +42,11 @@ export default function FirstView() {
               </Heading>
               <div className="FirstView__rating">
                 <span className="FirstView__ratingText">Rating</span>
+                <Rating
+                  className="FirstView__ratingStars"
+                  rating={4}
+                  size="m"
+                />
               </div>
               <p className="FirstView__filmDescription">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,12 +54,27 @@ export default function FirstView() {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
+              <span className="FirstView__genre">Fantasy</span>
+              <span className="FirstView__year">2008</span>
+              <PlayButton className="FirstView__playButton">
+                WATCH ONLINE
+              </PlayButton>
             </div>
           </div>
           <div className="FirstView__right">
             <Heading level={5} color="primary">
               NEW ITEMS
             </Heading>
+            <div className="FirstView__cards">
+              <Card
+                image={got}
+                color="indigo"
+                title="GAME OF THRONES"
+                subtitle="SEASON 8"
+                rating={4}
+                quality="HD"
+              />
+            </div>
           </div>
         </div>
       </div>

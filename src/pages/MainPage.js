@@ -1,4 +1,3 @@
-import logo from "../logo.svg";
 import "./MainPage.css";
 import FirstView from "../components/FirstView/FirstView";
 

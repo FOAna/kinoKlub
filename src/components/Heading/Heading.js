@@ -1,7 +1,6 @@
 import "./Heading.css";
 
 export default function Heading(props) {
-  console.log(props);
   if (props.level === 5) {
     return (
       <h5

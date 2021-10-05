@@ -1,0 +1,16 @@
+.Rating__starFull_m,
+.Rating__starEmpty_m {
+  width: 20px;
+  height: 20px;
+}
+.Rating__starFull_white path {
+  fill: var(--main-text-color);
+}
+.Rating__starEmpty_white path {
+  stroke: var(--main-text-color);
+}
+.Rating__starFull_s,
+.Rating__starEmpty_s {
+  width: 14px;
+  height: 14px;
+}

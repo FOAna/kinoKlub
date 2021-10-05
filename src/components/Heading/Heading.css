@@ -1,0 +1,21 @@
+.Heading {
+  margin: 0;
+  padding: 0;
+}
+.Heading_h2 {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: bold;
+}
+.Heading_h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.Heading_primary {
+  color: var(--main-text-color);
+}
+.Heading_secondary {
+  color: var(--secondary-text-color);
+}

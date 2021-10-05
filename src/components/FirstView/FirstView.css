@@ -1,4 +1,5 @@
 @import url("../../styles/sizes.css");
+@import url("../../styles/colors.css");
 
 .FirstView {
   background-image: url("../../images/inception.jpg");
@@ -17,7 +18,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   content: "";
 }
-.FirstView__content {
+.FirstView__allContent {
   max-width: var(--page-max-width);
   min-width: var(--page-min-width);
   margin: 0 auto;
@@ -40,4 +41,50 @@
   position: absolute;
   top: 80px;
   right: 320px;
+}
+.FirstView__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 132px;
+}
+.FirstView__left {
+  padding-top: 30px;
+  display: flex;
+  max-width: 700px;
+}
+.FirstView__right {
+}
+.FirstView__graphics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 32px;
+}
+.FirstView__point {
+  background-color: white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.FirstView__line {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+  width: 4px;
+  height: 180px;
+  margin-top: -4px;
+}
+.FirstView__thinnerText.FirstView__thinnerText {
+  font-weight: normal;
+}
+.FirstView__sectionHeading.FirstView__sectionHeading {
+  margin-bottom: 12px;
+}
+.FirstView__text {
+  color: var(--main-text-color);
+}
+.FirstView__rating {
+  margin: 24px 0;
 }

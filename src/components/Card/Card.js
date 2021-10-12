@@ -5,6 +5,7 @@ import Rating from "../Rating/Rating";
 export default function Card(props) {
   return (
     <div className="Card">
+      <span className="Card__number">{props.number}</span>
       <img
         className="Card__background"
         src={props.image}

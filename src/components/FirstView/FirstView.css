@@ -37,68 +37,10 @@
   width: 100%;
   opacity: 0.8;
 }
-.FirstView__foreground {
-  position: absolute;
-  top: 80px;
-  right: 320px;
-}
 .FirstView__content {
   display: flex;
   justify-content: space-between;
   padding-top: 132px;
 }
-.FirstView__left {
-  padding-top: 30px;
-  display: flex;
-  max-width: 700px;
-}
 .FirstView__right {
-}
-.FirstView__graphics {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 32px;
-}
-.FirstView__point {
-  background-color: white;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-}
-.FirstView__line {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0)
-  );
-  width: 4px;
-  height: 180px;
-  margin-top: -4px;
-}
-.FirstView__thinnerText.FirstView__thinnerText {
-  font-weight: normal;
-}
-.FirstView__sectionHeading.FirstView__sectionHeading {
-  margin-bottom: 12px;
-}
-.FirstView__text {
-  color: var(--main-text-color);
-  display: flex;
-  flex-direction: column;
-}
-.FirstView__rating {
-  margin: 24px 0 12px;
-  display: flex;
-  align-items: center;
-}
-.FirstView__ratingStars {
-  margin-left: 16px;
-}
-.FirstView__genre {
-  color: var(--accent-red-color);
-  margin: 8px 0;
-}
-.FirstView__playButton {
-  margin: 30px 0;
 }

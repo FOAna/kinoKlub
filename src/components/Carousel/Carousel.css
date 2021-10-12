@@ -1,0 +1,98 @@
+.Carousel {
+  padding-top: 30px;
+  display: flex;
+  max-width: 700px;
+}
+.Carousel__graphics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 32px;
+}
+.Carousel__point {
+  background-color: white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.Carousel__line {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+  width: 4px;
+  height: 180px;
+  margin-top: -4px;
+}
+.Carousel__thinnerText.Carousel__thinnerText {
+  font-weight: normal;
+}
+.Carousel__sectionHeading.Carousel__sectionHeading {
+  margin-bottom: 12px;
+}
+.Carousel__text {
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+}
+.Carousel__rating {
+  margin: 24px 0 12px;
+  display: flex;
+  align-items: center;
+}
+.Carousel__ratingStars {
+  margin-left: 16px;
+}
+.Carousel__genre {
+  color: var(--accent-red-color);
+  margin: 8px 0;
+}
+.Carousel__playButton {
+  margin: 30px 0;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+.Carousel__arrowLeft,
+.Carousel__arrowRight {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.Carousel__arrowRight {
+  transform: scaleX(-1);
+}
+.Carousel__switch {
+  display: flex;
+  justify-content: space-between;
+}
+.Carousel__buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+}
+.Carousel__foreground {
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: 280px;
+  transition: all 1s;
+}
+.Carousel__foreground_prev {
+  animation: 3s linear 1s slider;
+}
+.Carousel__foreground_next {
+  transform: translateX(100%);
+}
+.Carousel__foreground_curr {
+  animation: 3s linear slider;
+}
+@keyframes slider {
+  from {
+    right: 0;
+  }
+  to {
+    right: 280px;
+  }
+}

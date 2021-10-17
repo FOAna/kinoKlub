@@ -1,5 +1,5 @@
 import "./PlayButton.css";
-import play from "../../images/play.svg";
+import play from "../../../../images/play.svg";
 
 export default function PlayButton(props) {
   return (

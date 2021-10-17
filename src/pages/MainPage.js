@@ -1,5 +1,6 @@
 import "./MainPage.css";
 import FirstView from "../components/FirstView/FirstView";
+import MoviesFeed from "../components/MoviesFeed/MoviesFeed";
 
 export default function MainPage() {
   return (
@@ -7,7 +8,9 @@ export default function MainPage() {
       <div className="MainPage__firstView">
         <FirstView />
       </div>
-      <div className="MainPage__carousel"></div>
+      <div className="MainPage__carousel">
+        <MoviesFeed />
+      </div>
       <div className="MainPage__catalog"></div>
       <div className="MainPage__player"></div>
       <div className="MainPage__musicCatalog"></div>

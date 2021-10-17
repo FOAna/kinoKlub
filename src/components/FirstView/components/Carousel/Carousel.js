@@ -1,13 +1,13 @@
 import "./Carousel.css";
-import Heading from "../Heading/Heading";
-import Rating from "../Rating/Rating";
+import Heading from "../../../Heading/Heading";
+import Rating from "../../../Rating/Rating";
 import PlayButton from "../PlayButton/PlayButton";
-import arrow from "../../images/arrow.svg";
+import arrow from "../../../../images/arrow.svg";
 import { useState } from "react";
-import joker from "../../images/joker&batman.png";
-import neo from "../../images/neo.png";
-import gentlemen from "../../images/the-gentlemen.png";
-import joker2 from "../../images/joker.png";
+import joker from "../../../../images/joker&batman.png";
+import neo from "../../../../images/neo.png";
+import gentlemen from "../../../../images/the-gentlemen.png";
+import joker2 from "../../../../images/joker.png";
 
 // export нужен для импорта в другом файле
 // default должен быть один в файле, самая основная функция файла

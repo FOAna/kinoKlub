@@ -1,11 +1,14 @@
 import "./Card.css";
-import Heading from "../Heading/Heading";
-import Rating from "../Rating/Rating";
+import Heading from "../../../Heading/Heading";
+import Rating from "../../../Rating/Rating";
+import Text from "../../../Text/Text";
 
 export default function Card(props) {
   return (
     <div className="Card">
-      <span className="Card__number">{props.number}</span>
+      <Text className="Card__number" size="l">
+        {props.number}
+      </Text>
       <img
         className="Card__background"
         src={props.image}
@@ -17,14 +20,16 @@ export default function Card(props) {
             {props.title}
           </Heading>
           {Boolean(props.subtitle) && (
-            <span className="Card__subtitle">{props.subtitle}</span>
+            <Text className="Card__subtitle" size="m">
+              {props.subtitle}
+            </Text>
           )}
-          <span className="Card__rating">
+          <Text className="Card__rating" size="s">
             Rating
             <Rating rating={props.rating} color="white" size="s" />
-          </span>
+          </Text>
         </div>
-        <span className="Card__quality">{props.quality}</span>
+        <Text size="l">{props.quality}</Text>
       </div>
     </div>
   );

@@ -5,13 +5,17 @@ import Rating from "../../../Rating/Rating";
 export default function MovieCard(props) {
   const isSelected = props.isSelected;
   return (
-    <div className={"MovieCard" + (isSelected ? " MovieCard_selected" : "")}>
+    <div
+      className={
+        "MovieCard" + (isSelected === "true" ? " MovieCard_selected" : "")
+      }
+    >
       <img
         className="MovieCard__background"
         src={props.image}
         alt="Южный Парк, ребята!"
       />
-      {props.isSelected ? (
+      {props.isSelected === "true" ? (
         <div className="MovieCard__content">
           <div className="MovieCard__heading">
             <Text className="MovieCard__quality" size="xl">
